@@ -1,0 +1,14 @@
+[
+    {
+        "name": "onedrive_notes",
+        "description": "Coffres de notes",
+        "source" : "C:/Users/fski/Notes",
+        "dest": "C:/Users/fski/OneDrive/Coffres"
+    },
+    {
+        "name": "yoga",
+        "description": "Save on yoga server",
+        "source" : "C:/Users/fski/Notes",
+        "dest": "yoga:data/notes"
+    }
+]
