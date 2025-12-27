@@ -26,11 +26,11 @@ if [ -z "$venv_py" ]; then
   exit 1
 fi
 
-save_py="$script_dir/save.py"
-if [ ! -f "$save_py" ]; then
-  echo "save.py not found in $script_dir" >&2
+synchronize_py="$script_dir/synchronize.py"
+if [ ! -f "$synchronize_py" ]; then
+  echo "synchronize.py not found in $script_dir" >&2
   exit 1
 fi
 
 echo "Using Python: $venv_py"
-exec "$venv_py" "$save_py" "$@"
+exec "$venv_py" "$synchronize_py" "$@"

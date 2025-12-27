@@ -16,9 +16,9 @@ $scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Definition
 $venvPy = Join-Path $scriptDir ".venv\Scripts\python.exe"
 $python = if (Test-Path $venvPy) { $venvPy } else { "python.exe" }
 
-$savePy = Join-Path $scriptDir "save.py"
+$savePy = Join-Path $scriptDir "synchronize.py"
 if (-not (Test-Path $savePy)) {
-    Write-Error "save.py not found in $scriptDir"
+    Write-Error "synchronize.py not found in $scriptDir"
     exit 1
 }
 
